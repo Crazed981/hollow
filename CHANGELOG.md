@@ -12,6 +12,11 @@
     (`minecraft:block_transformer` entries are lists).
   - Registry codec and tag data for 26.2 and 26.3.
 
+### Fixed
+- Player Info (1.19.3+): the game mode is written before the listed flag, in action order.
+  Clients saw game mode 1 (creative) whatever the configured mode, and with `gameMode: 0`
+  the tab-list entry was also unlisted.
+
 ## 1.0.0
 
 Initial **Hollow** release.
